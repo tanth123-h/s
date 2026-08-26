@@ -1,0 +1,46 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SPIKE Volleyball Store</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="nav">
+<a class="brand" href="#home"><span class="brandLogo"><img src="assets/logo-ai.webp" alt="SPIKE logo"></span><span class="brandText">SPIKE</span></a>
+<nav id="navLinks"><a href="#home">Home</a><a href="#shop">Shop</a><a href="#catalog">Products</a><a href="#about">About</a></nav>
+<div class="actions"><button id="searchBtn">⌕</button><button id="wishBtn">♡<span id="wishCount">0</span></button><button id="cartBtn">🛒<span id="cartCount">0</span></button><button id="menuBtn">☰</button></div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div><p class="eyebrow">VOLLEYBALL GEAR • SCHOOL PROJECT</p><h1>OWN<br><span>THE COURT.</span></h1>
+<p>Premium volleyball gear for every serve, set, spike, and save.</p>
+<div class="heroBtns"><a class="btn primary" href="#shop">Shop Now →</a><button class="btn secondary" id="bestBtn">Best Sellers</button></div>
+<div class="stats"><div><b>16</b><span>Products</span></div><div><b>6</b><span>Categories</span></div><div><b>4.8★</b><span>Avg. Rating</span></div></div>
+</div>
+<div class="heroBall">🏐</div>
+</section>
+
+<section class="strip"><span>FAST DEMO CHECKOUT</span><b>✦</b><span>LOCAL PRODUCT IMAGES</span><b>✦</b><span>MOBILE RESPONSIVE</span></section>
+
+<section class="section" id="categories"><p class="eyebrow">SHOP BY CATEGORY</p><h2>Find your gear.</h2><div id="categoryGrid" class="categoryGrid"></div></section>
+
+<section class="section white" id="shop"><div class="heading"><div><p class="eyebrow">THE LINEUP</p><h2>Shop volleyball.</h2></div><p id="resultCount"></p></div>
+<div class="tools"><div class="search"><span>⌕</span><input id="searchInput" placeholder="Search products..."></div><select id="categoryFilter"></select><select id="sortSelect"><option value="featured">Featured</option><option value="price-low">Price: Low to High</option><option value="price-high">Price: High to Low</option><option value="rating">Top Rated</option></select></div>
+<div id="productGrid" class="productGrid"></div><div id="empty" class="empty hidden">No products found.</div></section>
+
+<section class="promo"><div><p class="eyebrow">LEVEL UP YOUR GAME</p><h2>GEAR UP.<br>PLAY HARDER.</h2><p>Built for training, school teams, matches, and players who want to improve.</p><a class="btn light" href="#shop">Explore Gear →</a></div><div class="bigBall">🏐</div></section>
+
+<section class="section" id="catalog"><div class="heading"><div><p class="eyebrow">FULL CATALOGUE</p><h2>What we sell.</h2></div><p>16 demo products</p></div><div id="catalogList" class="catalog"></div></section>
+
+<section class="section white info" id="about"><div><b>01</b><h3>Made for players</h3><p>Volleyball-focused products only.</p></div><div><b>02</b><h3>Works locally</h3><p>Cart and wishlist stay saved in your browser.</p></div><div><b>03</b><h3>Mobile ready</h3><p>Responsive layout for phones, tablets, and desktop.</p></div></section>
+</main>
+
+<footer><div class="footerBrand"><span class="brandLogo"><img src="assets/logo-ai.webp" alt="SPIKE"></span><span class="brandText">SPIKE</span></div><p>Own the court. • School Project Demo</p></footer>
+
+<div id="overlay" class="overlay"></div>
+<aside id="cartDrawer" class="drawer"><div class="drawerHead"><h2>Your Cart</h2><button data-close>×</button></div><div id="cartItems" class="drawerBody"></div><div class="drawerFoot"><div class="total"><span>Total</span><b id="cartTotal">฿0</b></div><button class="btn primary full" id="checkoutBtn">Proceed to Checkout →</button></div></aside>
+<aside id="wishDrawer" class="drawer"><div class="drawerHead"><h2>Wishlist</h2><button data-close>×</button></div><div id="wishItems" class="drawerBody"></div></aside>
+
+<div id="productModal" class="modal"><button class="modalClose" data-close>×</button><div id="productDetail"></div></div>
+<div id="checkoutModal" class="modal checkout"><button class="modalClose" data-close>×</button><div class="checkoutGrid"><form id="checkoutForm"><p class="eyebrow">DEMO CHECKOUT</p><h2>Checkout</h2>
+<label>Full name<input required name="name"></label><label>Email<input required type="email" name="email"></label><label>Address<input required name="address"></label><div class="two"><label>City<input required name="city"></label><label>Postal code<input required name="postal"></label></div><label>Payment<select><option>Cash on Delivery</option><option>Bank Transfer (Demo)</option><option>Credit Card (Demo)</option></select></label><button class="btn primary full">Place Demo Order →</button></form><div class="summary"><p class="eyebrow">ORDER SUMMARY</p><div id="checkoutItems"></div><div class="total"><span>Total</span><b id="checkoutTotal">฿0</b></div></div></div></div>
+<div id="successModal" class="modal success"><div class="check">✓</div><p class="eyebrow">ORDER CONFIRMED</p><h2>Order Successfully Placed!</h2><p id="successText"></p><button class="btn primary" id="continueBtn">Continue Shopping</button></div>
+<div id="toast" class="toast"></div>
+<script src="app.js"></script></body></html>

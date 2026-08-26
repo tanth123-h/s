@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900">
+<rect width="900" height="900" rx="60" fill="#eef1f6"/>
+<circle cx="705" cy="155" r="180" fill="#ff6b3d" opacity=".18"/>
+<circle cx="205" cy="730" r="120" fill="#ff6b3d" opacity=".10"/>
+<circle cx="450" cy="390" r="230" fill="#fff"/>
+<text x="450" y="475" text-anchor="middle" font-size="210">🏐</text>
+<rect x="75" y="75" width="240" height="58" rx="29" fill="#0b1538"/>
+<text x="195" y="112" text-anchor="middle" font-size="22" font-family="Arial" font-weight="700" fill="white">VOLLEYBALLS</text>
+<text x="450" y="720" text-anchor="middle" font-size="48" font-family="Arial" font-weight="900" fill="#0b1538">Pro Match Volleyball</text>
+<text x="450" y="775" text-anchor="middle" font-size="25" font-family="Arial" font-weight="700" fill="#ff6b3d">SPIKE / OWN THE COURT</text>
+</svg>
