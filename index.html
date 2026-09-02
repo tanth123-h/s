@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b1538"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="assets/logo-ai.webp">
 <title>SPIKE Volleyball Store</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="polish.css"></head><body>
 <header class="nav">
 <a class="brand" href="#home"><span class="brandLogo"><img src="assets/logo-ai.webp" alt="SPIKE logo"></span><span class="brandText">SPIKE</span></a>
@@ -43,4 +43,4 @@
 <label>Full name<input required name="name"></label><label>Email<input required type="email" name="email"></label><label>Address<input required name="address"></label><div class="two"><label>City<input required name="city"></label><label>Postal code<input required name="postal"></label></div><label>Payment<select><option>Cash on Delivery</option><option>Bank Transfer (Demo)</option><option>Credit Card (Demo)</option></select></label><button class="btn primary full">Place Demo Order →</button></form><div class="summary"><p class="eyebrow">ORDER SUMMARY</p><div id="checkoutItems"></div><div class="total"><span>Total</span><b id="checkoutTotal">฿0</b></div></div></div></div>
 <div id="successModal" class="modal success"><div class="check">✓</div><p class="eyebrow">ORDER CONFIRMED</p><h2>Order Successfully Placed!</h2><p id="successText"></p><button class="btn primary" id="continueBtn">Continue Shopping</button></div>
 <div id="toast" class="toast"></div>
-<script src="app.js"></script><script src="polish-products.js"></script></body></html>
+<script src="app.js"></script><script src="polish-products.js"></script><script>if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js')</script></body></html>
